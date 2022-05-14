@@ -18,8 +18,17 @@ function git_commands () {
 
 #check for a commit message, if there is no message, display a usage statement and exit the script
 if [ -z "$1" ] ; then
-	echo "Usage: pipeline.sh <commit message>"
+	echo "Usage: pipeline.sh <commit message> <modification flag (optional, y = yes, anything else = no)>"
 	exit 0
+fi
+
+#to add the 1st line modification (name and ID) check for the flag
+if [ "$2" == 'y' ] ; then
+	echo "Executing ./update_files.sh "
+	./update_files.sh
+else
+
+	echo "Will NOT be executing the update_files.sh script"
 fi
 
 

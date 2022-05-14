@@ -1,3 +1,4 @@
+//Name: Veela Moxham-Bettridge	ID: 1537715
 //
 export const categories = {
   cooks: "Cookbooks",
