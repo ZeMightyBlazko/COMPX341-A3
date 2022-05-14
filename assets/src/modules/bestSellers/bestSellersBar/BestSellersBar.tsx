@@ -12,7 +12,7 @@ import umami from "../../../images/bestSellers/umami.png";
 
 const bestSellers = [burgers, italian, noodles, pancakes, pineapple, umami];
 
-export class BestSellersBar extends React.Component {
+exprt class BestSellersBar extends React.Component {
   render() {
     return (
       <div className="center ad-gallery nav">
